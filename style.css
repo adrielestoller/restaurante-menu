@@ -1,122 +1,68 @@
 :root {
-    --fundo: #f1f5f8;
-    --gold: #c59d5f;
-    --blue: #063251;
-    --light-blue: #617d98;
+    --fundo: hsl(209, 61%, 16%);
+    --descricao: hsl(210, 22%, 49%);
 }
 
+body{
+background-color: var(--fundo); 
+background-color: aliceblue;
+}
+  
+    
 * {
+
+    font-family: 'Signika Negative', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background-color: var(--fundo);
-}
-
-header {
-    width: 80%;
-    margin: 0 auto;
-    padding: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    color: var(--blue);
 }
 
 img {
-    width: 100%;
+    width: 80%;
 }
 
-.line {
-    width: 100px;
-    height: 5px;
-    background-color: var(--gold);
-    border-radius: 2px;
+.card-image img{
+width: 350px;
+border: #C99E38 4px solid;
+border-radius: 4px;
+
+}
+.card{
+    max-width: 700px;
+display: flex;
+flex-direction:row;
+gap: 1rem;
+}
+.conteiner
+{
+    display: flex;
+flex-direction:row;
+gap:1rem;
 }
 
-.menu-itens {
+.titulo {
     display: flex;
     flex-direction: row;
+    border-bottom: black 1px dotted;
     gap: 1rem;
-    color: var(--gold);
-    list-style: none;
-}
-
-.menu-itens li {
-    padding: 5px;
-    border: var(--gold) 2px solid;
-    border-radius: 5px;
-    transition: .5s;
-}
-
-.menu-itens li:hover {
-    background-color: var(--gold);
+    justify-content: space-between;
+    font-size:30px;
     color: var(--fundo);
 }
 
-.container {
-    width: 90%;
-    margin: 0 auto;
-
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    align-items: center;
-    justify-items: center;
-}
-
-.card {
-    max-width: 600px;
-    display: flex;
-    flex-direction: row;
-    gap: 1.2rem;
-}
-
-.card-image img {
-    width: 250px;
-    border: var(--gold) 5px solid;
-    border-radius: 5px;
-}
-
-.card-info {
+.bla {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
+}
+.dinheiro {
+color:#C99E38;
+font-size:20px;
+
+}
+.deus{
+color: var(--descricao);
 }
 
-.card-title {
-    display: flex;
-    flex-direction: row;
 
-    justify-content: space-between;
-    align-items: center;
 
-    border-bottom: black 1px dotted;
-}
-
-.card-title h3,
-.card-preco {
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 3px;
-}
-
-.card-preco {
-    color: var(--gold);
-}
-
-.card-description {
-    color: var(--light-blue);
-    font-size: 1rem;
-    font-weight: 300;
-}
